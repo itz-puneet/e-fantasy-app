@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="660" viewBox="0 0 320 660" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+  <rect x="0" y="0" width="320" height="660" rx="26" fill="#0F1115"/>
+  <!-- status bar -->
+  <text x="24" y="34" fill="#7E8899" font-size="12" font-weight="600">9:41</text>
+  <circle cx="286" cy="30" r="3" fill="#7E8899"/><circle cx="296" cy="30" r="3" fill="#7E8899"/><circle cx="306" cy="30" r="3" fill="#7E8899"/>
+  <!-- header -->
+  <text x="24" y="66" fill="#E6EAF0" font-size="20" font-weight="800">‹  Leaderboard</text>
+  <text x="42" y="88" fill="#A3ACBD" font-size="12">Grand Finals Mega Contest</text>
+  <!-- status row -->
+  <text x="24" y="116" fill="#A3ACBD" font-size="13" font-weight="600">Grand Finals — Day 3</text>
+  <rect x="232" y="103" width="64" height="22" rx="11" fill="#3a1c1e"/>
+  <circle cx="247" cy="114" r="4" fill="#FF4D4D"/>
+  <text x="278" y="118" fill="#FF4D4D" font-size="10" font-weight="800" text-anchor="middle">LIVE</text>
+  <!-- your position card -->
+  <rect x="24" y="134" width="272" height="72" rx="14" fill="#1FCB6B"/>
+  <text x="40" y="160" fill="#04160B" fill-opacity="0.72" font-size="12" font-weight="700">Your position</text>
+  <text x="40" y="190" fill="#04160B" font-size="24" font-weight="800">#2 <tspan font-size="14" fill-opacity="0.72">of 20</tspan></text>
+  <text x="280" y="186" fill="#04160B" font-size="18" font-weight="800" text-anchor="end">312.5 pts</text>
+  <!-- rankings label -->
+  <text x="24" y="234" fill="#E6EAF0" font-size="16" font-weight="800">Rankings</text>
+  <!-- row #1 gold -->
+  <rect x="24" y="248" width="272" height="52" rx="12" fill="#1C2029" stroke="#2C3340"/>
+  <circle cx="48" cy="274" r="14" fill="#F5C542"/>
+  <text x="48" y="279" fill="#14171C" font-size="13" font-weight="800" text-anchor="middle">1</text>
+  <text x="74" y="270" fill="#E6EAF0" font-size="14" font-weight="700">ProSniper99</text>
+  <text x="74" y="287" fill="#7E8899" font-size="11">Team Alpha</text>
+  <text x="280" y="279" fill="#1FCB6B" font-size="14" font-weight="800" text-anchor="end">340.0</text>
+  <!-- row #2 silver (you) -->
+  <rect x="24" y="306" width="272" height="52" rx="12" fill="#17281d" stroke="#1FCB6B"/>
+  <circle cx="48" cy="332" r="14" fill="#C7CDD6"/>
+  <text x="48" y="337" fill="#14171C" font-size="13" font-weight="800" text-anchor="middle">2</text>
+  <text x="74" y="328" fill="#E6EAF0" font-size="14" font-weight="700">You</text>
+  <text x="74" y="345" fill="#7E8899" font-size="11">Fire Squad</text>
+  <text x="280" y="337" fill="#1FCB6B" font-size="14" font-weight="800" text-anchor="end">312.5</text>
+  <!-- row #3 bronze -->
+  <rect x="24" y="364" width="272" height="52" rx="12" fill="#1C2029" stroke="#2C3340"/>
+  <circle cx="48" cy="390" r="14" fill="#CD8E4B"/>
+  <text x="48" y="395" fill="#14171C" font-size="13" font-weight="800" text-anchor="middle">3</text>
+  <text x="74" y="386" fill="#E6EAF0" font-size="14" font-weight="700">HeadshotKing</text>
+  <text x="74" y="403" fill="#7E8899" font-size="11">Night Owls</text>
+  <text x="280" y="395" fill="#E6EAF0" font-size="14" font-weight="800" text-anchor="end">298.0</text>
+  <!-- row #4 -->
+  <rect x="24" y="422" width="272" height="52" rx="12" fill="#1C2029" stroke="#2C3340"/>
+  <circle cx="48" cy="448" r="14" fill="#242A35"/>
+  <text x="48" y="453" fill="#A3ACBD" font-size="13" font-weight="800" text-anchor="middle">4</text>
+  <text x="74" y="444" fill="#E6EAF0" font-size="14" font-weight="700">ClutchGod</text>
+  <text x="74" y="461" fill="#7E8899" font-size="11">Team Vipers</text>
+  <text x="280" y="453" fill="#E6EAF0" font-size="14" font-weight="800" text-anchor="end">271.5</text>
+  <!-- row #5 -->
+  <rect x="24" y="480" width="272" height="52" rx="12" fill="#1C2029" stroke="#2C3340"/>
+  <circle cx="48" cy="506" r="14" fill="#242A35"/>
+  <text x="48" y="511" fill="#A3ACBD" font-size="13" font-weight="800" text-anchor="middle">5</text>
+  <text x="74" y="502" fill="#E6EAF0" font-size="14" font-weight="700">RushMaster</text>
+  <text x="74" y="519" fill="#7E8899" font-size="11">Shadow Clan</text>
+  <text x="280" y="511" fill="#E6EAF0" font-size="14" font-weight="800" text-anchor="end">255.0</text>
+  <!-- note -->
+  <text x="24" y="560" fill="#7E8899" font-size="11">Points update live · official within 1 hour of match end</text>
+</svg>

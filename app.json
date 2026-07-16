@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "E-Fantasy",
+    "slug": "e-fantasy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "efantasy",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.efantasy.app"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-asset"
+    ]
+  }
+}
