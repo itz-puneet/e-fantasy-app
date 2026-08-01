@@ -6,7 +6,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { useEffect, useMemo, useState } from 'react';
-import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Alert, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { font, radius, spacing, useTheme, type ThemeColors, type ThemeShadow } from '../../constants/theme';
 import { useAuth } from '../../lib/AuthContext';
@@ -36,10 +36,16 @@ export default function Profile() {
   const initial = (username || email || '?').charAt(0).toUpperCase();
 
   const confirmSignOut = () => {
-    Alert.alert('Sign out', 'Are you sure you want to sign out?', [
-      { text: 'Cancel', style: 'cancel' },
-      { text: 'Sign out', style: 'destructive', onPress: signOut },
-    ]);
+    if (Platform.OS === 'web') {
+      if (window.confirm('Are you sure you want to sign out?')) {
+        signOut();
+      }
+    } else {
+      Alert.alert('Sign out', 'Are you sure you want to sign out?', [
+        { text: 'Cancel', style: 'cancel' },
+        { text: 'Sign out', style: 'destructive', onPress: signOut },
+      ]);
+    }
   };
 
   return (
