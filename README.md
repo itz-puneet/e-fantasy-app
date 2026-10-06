@@ -70,7 +70,7 @@ E-Fantasy is a full-stack mobile app built with **Expo / React Native** on the f
 
 ## 🧱 Architecture Highlights
 
-**Secure-by-design backend.** Application tables have **no direct INSERT/UPDATE policies** — instead, all mutations flow through **13 `SECURITY DEFINER` PL/pgSQL functions** (e.g. `join_tournament`, `save_roster`, `finalize_match`, `admin_delete_tournament`) guarded by **27 Row-Level Security policies**. The client calls typed RPCs; the database enforces the rules. A user physically cannot mint tokens, alter someone else's roster, or read another player's private wallet.
+**Secure-by-design backend.** Row-Level Security is enabled on all **12 tables**, with **15 policies**: 12 are read-only, and the only direct writes a client can make are to its own profile and its own rosters. Wallets, the transaction ledger, and contest entries have **no INSERT/UPDATE policies at all** — those mutations flow through **15 `SECURITY DEFINER` PL/pgSQL functions** (e.g. `join_tournament`, `save_roster`, `finalize_match`, `admin_delete_tournament`). The client calls typed RPCs; the database enforces the rules. A user physically cannot mint tokens, alter someone else's roster, or read another player's private wallet.
 
 **Atomic virtual economy.** Wallet debits (entry fees), credits (prize payouts), and refunds run inside single database transactions, so balances can never drift or double-pay — even under concurrent contest joins.
 
